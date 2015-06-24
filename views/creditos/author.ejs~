@@ -5,13 +5,10 @@
     <title>Quiz</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
-<<<<<<< HEAD
   <body>    
-=======
+
   <body>
     <h2>Quiz: el juego de las preguntas</h2>
-    
->>>>>>> a7e5cc1043c07281453d72dc97a41d65f0232ff7
     <p><%= author %><p>
     <a href="/creditos/author"></a>
   </body>
