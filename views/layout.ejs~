@@ -23,10 +23,17 @@
     </section>
 
     <footer class="main" id="f1">
+<<<<<<< HEAD
+      <span><a href="http://es.wikipedia.org/wiki/Quiz">
+        ¿Que es un Quiz?</a></span>
+      <span><a href="https://github.com/manago90/Quiz.git">
+        Mi proyecto Quiz</a></span>
+=======
       <a href="http://es.wikipedia.org/wiki/Quiz">
         ¿Que es un Quiz?</a>
       <a href="https://github.com/manago90/Quiz.git">
         Mi proyecto Quiz</a>
+>>>>>>> 552ad1056f46e163876c85a239e5f89ff27cff34
     </footer>
   </div>
   </body>
