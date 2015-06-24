@@ -5,8 +5,10 @@
     <title>Quiz</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
-  <body>    
-    <p><%= respuesta %><p>
-    <a href="/quizes/question"> Intentelo otra vez </a>
+  <body>
+    <h2>Quiz: el juego de las preguntas</h2>
+    
+    <p><%= author %><p>
+    <a href="/creditos/author"></a>
   </body>
 </html>
