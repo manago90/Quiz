@@ -7,7 +7,7 @@ exports.load = function(req, res, next, quizId) {
       if (quiz) {
         req.quiz = quiz;
         next();
-      } else { next (new Error('No existe quizId=' + quizId)) }
+      } else { next (new Error('No existe quizId=' + quizId)); }
      }
   ).catch(function(error) { next(error);});
 };
@@ -16,7 +16,7 @@ exports.load = function(req, res, next, quizId) {
 exports.index = function(req, res) {
   models.Quiz.findAll().then(
     function(quizes) {
-      res.render('quizes/index', { quizes: quizes});
+      res.render('quizes/index.ejs', { quizes: quizes});
     }
   ).catch(function(error) { next(error);})
 };
