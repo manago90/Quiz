@@ -10,3 +10,7 @@ exports.answer = function(req,res) {
       res.render('quizes/answer', {respuesta: 'Incorrecto'});
   }
 };
+
+//GET /creditos/author
+exports.author = function(req,res) {
+ res.render('creditos/author', {author: 'Manuel Najarro'})};
