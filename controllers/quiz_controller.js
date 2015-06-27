@@ -6,7 +6,7 @@ exports.load = function(req, res, next, quizId) {
     function(quiz) {
       if (quiz) {
         req.quiz = quiz;
-        next())
+        next();
       } else { next (new Error('No existe quizId=' + quizId)); }
      }
   ).catch(function(error) { next(error);});
