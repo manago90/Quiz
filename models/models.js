@@ -1,4 +1,6 @@
 var path = require('path');
+// Cargar Modelo ORM
+var Sequelize = require('sequelize');
 
 //Postgres DATABASE_URL = postgres://user:passwd@host:port/database
 //SQLite DATABASE_URL = sqlite://:@:/
@@ -12,8 +14,6 @@ var port     = (url[5]||null);
 var host     = (url[4]||null);
 var storage  = process.env.DATABASE_STORAGE;
 
-// Cargar Modelo ORM
-var Sequelize = require('sequelize');
 
 // Usar BBDD SQLite o Postgres
 var sequelize = new Sequelize(DB_name, user, pwd,
@@ -23,8 +23,7 @@ var sequelize = new Sequelize(DB_name, user, pwd,
     host:     host,
     storage:  storage,  // solo SQLite (.env)
     omitNull: true      // solo Postgres
-}
-);
+});
 
 // Importar definición de la tabla Quiz
 var quiz_path = path.join(__dirname,'quiz');
@@ -42,8 +41,8 @@ sequelize.sync().then(function() {
                  });
       Quiz.create({ pregunta: 'Capital de Portugal',
                     respuesta: 'Lisboa'
+                 }).then(function(){console.log('Base de datos inicializada');
                  });
-      //.then(function(){console.log('Base de datos inicializada')});
-     };
-   });
+    }
+  });
 });

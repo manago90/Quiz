@@ -5,4 +5,4 @@ module.export = function(sequelize, DataTypes) {
             { pregunta: DataTypes.String,
               respuesta: DataTypes.String,
 	    });
-}
+};
