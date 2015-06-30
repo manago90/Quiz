@@ -9,6 +9,6 @@
 
   <body>
     <p><%= author %><p>
-    <img src="/images/foto.jpeg">
+    <img src="/images/foto.jpg">
   </body>
 </html>
