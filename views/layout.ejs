@@ -20,22 +20,14 @@
     </nav>
 
     <section class="main" id="s1">
-      <% if (errors.length) { %>
-<span id='ErrorMsgs'>
-Corregir errores:<br/>
-<% for (var i in errors) { %>
-<span><%= errors[i].message %></span><br/>
-<% } %>
-</span>
-<% } %>
       <div>
         <%- body %>
       </div>
     </section>
 
     <footer class="main" id="f1">
-      <span><a href="http://es.wikipedia.org/wiki/Quiz">
-        ¿Que es un Quiz?</a></span>
+      <!--<span><a href="http://es.wikipedia.org/wiki/Quiz">
+        ¿Que es un Quiz?</a></span> -->
       <span><a href="https://github.com/manago90/Quiz.git">
         Mi proyecto Quiz</a></span>
     </footer>
