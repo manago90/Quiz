@@ -1,2 +1,8 @@
 <table>
-
+  <tr>
+     <td id="nombre"> Manuel Najarro</td>
+  </tr>
+  <tr>
+     <td><img src="/images/autor"></td>
+  </tr>
+</table>
