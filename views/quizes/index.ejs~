@@ -6,8 +6,7 @@
 <p>
 <table>
    <% var i; for (i=0; i < quizes.length; i++) { %>
-      <tr>
-      <td><a href="quizes/<%= quizes[i].id %>"><%= quizes[i].pregunta %></a> (<%= quizes[i].tema %>)</td>
+      <tr><td><a href="quizes/<%= quizes[i].id %>"><%= quizes[i].pregunta %></a> (<%= quizes[i].tema %>)</td>
       <% if (session.user) { %>
           <td><a href="quizes/<%= quizes[i].id %>/edit"><button name="Editar">Editar</button></a></td>
           <td>

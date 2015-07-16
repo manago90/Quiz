@@ -31,11 +31,7 @@ var quiz_path = path.join(__dirname, 'quiz');
 var Quiz = sequelize.import(quiz_path);
 var Comment = sequelize.import(path.join(__dirname, 'comment'));
 
-Comment.belongsTo(Quiz);
-Quiz.hasMany(Comment);
-
 exports.Quiz = Quiz;
-exports.Comment = Comment;
 
 // sequelize.sync() inicializa tabla de preguntas en DB
 sequelize.sync().then(function() {

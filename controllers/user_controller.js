@@ -1,0 +1,17 @@
+var users = {
+  admin: {id:1, username:"admin", password:"1234"},
+  prueba: {id:2, username:"user", password:"5678"}
+};
+
+exports.autenticar = function(user, password, callback) {
+  if (users[user]) {
+    if (users[user].password === password) {
+      callback(null, users[user]);
+    } else {
+      callback({message: "Password incorrecto"});
+    }
+  } else {
+    // No existe el usuarios
+    callback({message: "Usuario no existe"});
+  }
+};

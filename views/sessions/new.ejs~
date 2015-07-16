@@ -1,0 +1,35 @@
+<h2>Login</h2>
+
+<form method="post" action="/login">
+
+  <div class="field">
+    <label for="login">Login:</label><br />
+    <input type="text" id="login" name="login" size="30" />
+  </div>
+
+ <div class="field">
+    <label for="password">Password:</label><br />
+    <input type="password" id="password" name="password" size="30" />
+  </div>
+
+ <div class="actions">
+    <input name="commit" type="submit" value="Login" />
+  </div>
+
+
+<label for="preg" class="rem">Clave:</label>
+<input type="text" name="login[password]" value="" />
+</p>
+<p>
+<a href="<%= session.redir %>"><button type="button">Cancelar</button></a>
+<input type="submit" value="Aceptar" />
+</p>
+<br/><br/>
+<span>
+Usuarios de prueba:
+<ul>
+<li>admin / admin</li>
+<li>user / user</li>
+</ul>
+</span>
+</form>

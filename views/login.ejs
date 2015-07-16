@@ -1,0 +1,24 @@
+<h2>Login</h2>
+
+<form method="post" action="/login">
+  <p>
+       <label for="preg" class="rem">Usuario:</label>
+       <input type="text" name="login[user]" value="" />
+  </p>
+<p>
+<label for="preg" class="rem">Clave:</label>
+       <input type="text" name="login[password]" value="" />
+</p>
+<p>
+       <a href="<%= session.redir %>"><button type="button">Cancelar</button></a>
+       <input type="submit" value="Aceptar" />
+</p>
+<br/><br/>
+<span>
+Usuarios de prueba:
+<ul>
+  <li>admin / 1234</li>
+  <li>prueba / 5678</li>
+</ul>
+</span>
+</form>
